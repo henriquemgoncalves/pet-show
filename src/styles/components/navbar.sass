@@ -1,0 +1,54 @@
+@use '../variables'
+
+#navbar
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .container
+        padding: 3rem 0
+
+        nav 
+            display: flex
+            gap: 2rem
+
+            a
+                text-decoration: none
+                color: #fff
+                font-size: 1.5rem
+                font-weight: variables.$text-weight-6
+                white-space: nowrap
+                transition: .3s
+
+                &:hover
+                    color: #8444d8
+
+    .btn-home
+        border: 1px solid #8444d8
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: .2rem
+        font-size: 3rem
+        position: fixed
+        bottom: 2rem
+        right: 1rem
+        z-index: 1
+        background-color: #040D12
+        transition: .3s
+
+        &:hover
+            background-color: #fff
+            color: #8444d8
+
+    @media (max-width: 360px)
+        .container
+            padding: 3rem 0 2rem 0
+            nav 
+                a 
+                    font-size: 1.3rem
+                    font-weight: variables.$text-weight-4         
+            
+        

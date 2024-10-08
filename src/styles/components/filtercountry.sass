@@ -1,0 +1,95 @@
+@use '../variables'
+    
+#filter
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 3rem 0
+    gap: 2rem
+
+    .container
+        width: 80%
+        height: auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 1rem
+        align-items: center
+
+        button 
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 1px
+            border-radius: 100%
+            transition: .3s
+
+            &:hover
+                transform: scale(1.1)
+
+            img 
+                width: 2.3rem 
+
+            p 
+                padding-right: .3rem
+                font-weight: variables.$text-weight-6
+
+    @media (max-width: 360px)
+        h2 
+            font-size: 1.3rem           
+
+    #container-pets
+        width: 90%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        gap: 1rem
+        border: 2px solid #1E0342
+        filter: drop-shadow(0 5px 10px #250253)
+        padding: 2rem
+        margin: 1rem
+        border-radius: variables.$radius
+
+        .pets
+            width: 250px
+            height: 220px
+
+            img 
+                width: 100%
+                height: 180px
+                border-radius: variables.$radius
+
+            .origins
+                width: 100%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin: -25px 0 0 -5px
+
+                h3 
+                    font-size: 1rem
+                    color: variables.$text-color-primary
+                    background-color: #250253
+                    padding: 0 .2rem
+                    border-radius: variables.$radius
+                    font-weight: variables.$text-weight-4
+
+        @media (max-width: 360px)
+            padding: 1rem
+            margin: 0
+            
+            p 
+                font-size: .9rem 
+                
+                .pets                
+                    .origins
+                        h3 
+                            font-size: .9rem
+
+                            
+
+    
+        

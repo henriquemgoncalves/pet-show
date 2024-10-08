@@ -1,0 +1,23 @@
+@use '../variables'
+
+#info
+    width: 100%
+    display: flex
+    justify-content: center
+    
+
+    .container
+        width: 90%
+        text-align: start
+
+        p 
+            padding: 0 2rem
+            font-size: 1rem
+            font-weight: variables.$text-weight-4
+
+    @media (max-width: 500px)
+        .container
+            p 
+                font-size: .9rem
+                padding: 0       
+        
